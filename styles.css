@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.section {
+    background-color: lightgray;
+}
+#navbar {
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
+}
+.header-btn {
+    outline-style: none;
+    border: none;
+    font-size: x-large;
+    font-weight: bold;
+    flex: 1;
+    transition: background-color ease 0.15s;
+}
+
+.header-btn:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.header-btn:focus-visible {
+    background-color: darkgray;
+}
+
+#image-box {
+    width: 100vw;
+    height: 30vh;
+    background-size: cover;
+    background-position: 0 40%;
+    background-repeat: no-repeat;
+    background-image:
+            linear-gradient(to right, #000, rgb(0 0 0 / 0.1), rgb(0 0 0 / 0.0), transparent),
+            url("./images/weaponregistration.jpg");;
+}
+.paragraph {
+    font-family: "Palatino Linotype", sans-serif;
+    justify-self: center;
+    font-size: 2rem;
+    overflow-wrap: break-word;
+    width: 80%;
+}
+h1.title  {
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    text-decoration-line: underline;
+}
+
+h2.title {
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration-line: underline;
+}
+
+h3.title {
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.block-quote:not(.paragraph) {
+    justify-self: center;
+    text-align: center;
+    font-size: 2rem;
+    width: 60%;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.stance-div {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: "left-table center-table right-table";
+}
+
+.left-table {
+    grid-area: left-table;
+    justify-content: center;
+    text-align: center;
+}
+
+.right-table {
+    text-align: center;
+    justify-content: center;
+    grid-area: right-table;
+}
+
+.center-table {
+    grid-area: center-table;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.green {
+    color: #40b540;
+}
+
+.challenge-list {
+    margin-bottom: 50px;
+    text-align: center;
+    list-style-position: inside;
+}
+ul .paragraph {
+    margin-bottom: 50px;
+}
